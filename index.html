@@ -27,41 +27,47 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="h-lvh flex flex-col md:flex-row m-auto"">
-  <header class=" flex justify-between w-11/12 mx-auto mt-5 ">
-  <img width=" 100px" src="/images/logo.svg" alt="logo" />
-<nav class="flex">
-  <ul class="flex gap-7 content-center">
-    <li><a class="font-raleway-400 text-[#585989]" href="#">Features</a></li>
-    <li><a class="font-raleway-400 text-[#585989]" href="#">Team</a></li>
-    <li><a class="font-raleway-400 text-[#585989]" href="#">Sign In</a></li>
-  </ul>
-</nav>
-</header>
-
-<section class="mt-28">
+<body class="h-lvh flex flex-col m-auto">
+  <header class=" flex justify-between w-11/12 mx-auto mt-5 md:w-11/12">
+    <img class="w-[100px] md:w-[200px]" src="/images/logo.svg" alt="logo" />
+    <nav class="flex">
+      <ul class="flex gap-7 content-center md:gap-16">
+        <li><a class="font-raleway-400 text-[#585989] md:text-xl" href="#">Features</a></li>
+        <li><a class="font-raleway-400 text-[#585989] md:text-xl" href="#">Team</a></li>
+        <li><a class="font-raleway-400 text-[#585989] md:text-xl" href="#">Sign In</a></li>
+      </ul>
+    </nav>
+  </header>
+<section class="md:flex">
+<div class="mt-28  md:w-3/6 md:order-2">
   <img class="max-w-full" src="/images/illustration-1.svg">
-</section>
+</div>
 
-
-<h1 class="text-4xl text-[#070439] text-center flex justify-between w-11/12 mx-auto mt-5">
+<div class="flex flex-col md:justify-center md:w-3/6 md:order-1">
+  <h1 class="text-4xl text-[#070439] text-center md:text-left flex justify-between w-11/12 mx-auto mt-5">
   All your files in one secure location, accessible anywhere.
 </h1>
 
-<p class="text-lg text-[#585989] text-center flex justify-between w-11/12 mx-auto mt-12">
+<p class="text-lg text-[#585989] text-center md:text-left flex justify-between w-11/12 mx-auto mt-12">
   Fylo stores your most important files in one secure location.
   Access them wherever you need, share and collaborate with friends,
   family, and co-workers.
 </p>
 
-<form class="flex flex-col max-w-full ">
-  <input class="border border-1 border-[#070439]  w-11/12 mx-auto mt-3 pl-3 py-2 rounded-md placeholder-gray-300"
-    placeholder="Enter your email">
-</form>
+<div class="flex flex-col md:flex md:flex-row md:w-10/12 md:ml-4">
+  <form class="flex flex-col max-w-full md:w-8/12">
+    <input class="border border-1 border-[#070439]  w-11/12 mx-auto mt-3 pl-3 py-2 rounded-md placeholder-gray-300 md:my-4 md:py-3 "
+      placeholder="Enter your email">
+  </form>
+  
+  <button class="bg-[#3065F8] w-11/12 mx-auto mt-4 text-white p-3 rounded-md mb-30 md:my-4 md:w-4/12">
+    Get Started
+  </button>
+</div>
 
-<button class="bg-[#3065F8] w-11/12 mx-auto mt-4 text-white p-3 rounded-md mb-30">
-  Get Started
-</button>
+</div>
+</section>
+
 
 <div class="bg-[#F9F8FE]">
 
